@@ -1,8 +1,13 @@
 import { IItunesItem } from '@/components/RotatingItems/types';
 
 const getUniqueItems = (items: IItunesItem[]) => {
-    const collectionNames = items.map((item) => item.collectionName);
-    return items.filter((item, index) => collectionNames.indexOf(item.collectionName) === index);
+    // in case of empty CollectionName return empty array
+    const collectionNames = items.map((item) => item.collectionName || '');
+
+    // filter out empty items and duplicates
+    return items
+        .filter(Boolean)
+        .filter((item, index) => collectionNames.indexOf(item.collectionName) === index);
 };
 
 export const getCollectionNamesFromItunesResults = (results: IItunesItem[]) =>
