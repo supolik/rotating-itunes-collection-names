@@ -49,8 +49,18 @@ const RotatingItems = () => {
     }, []);
 
     const fetchItunesData = async (search = '') => {
-        const response = await fetch(`https://itunes.apple.com/search?term=${search}`);
-        return await response.json();
+        try {
+            const response = await fetch(`https://itunes.apple.com/search?term=${search}`);
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+
+            return await response.json();
+        } catch (error) {
+            return {
+                results: [],
+            };
+        }
     };
 
     const applySearchValue = useDebouncedCallback(async (search = '') => {
