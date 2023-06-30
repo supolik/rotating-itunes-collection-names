@@ -3,6 +3,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Live DEMO
 Open [https://rotating-itunes-collection-names.vercel.app/](https://rotating-itunes-collection-names.vercel.app/) with your browser to see the result.
 
+## Based on task
+<img width="949" alt="task_1:2" src="https://github.com/supolik/rotating-itunes-collection-names/assets/6150222/6c604c8b-11a3-4eac-be26-d5af7a9351cb">
+<img width="975" alt="task_2:2" src="https://github.com/supolik/rotating-itunes-collection-names/assets/6150222/3873d276-714d-41c6-ab15-4b5bb1cb4c3f">
+
+
 ## Getting Started
 
 First, run the development server:
