@@ -1,5 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Live DEMO
+Open [https://rotating-itunes-collection-names.vercel.app/](https://rotating-itunes-collection-names.vercel.app/) with your browser to see the result.
+
 ## Getting Started
 
 First, run the development server:
